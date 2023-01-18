@@ -24,11 +24,9 @@ const isInside = (x, y) => {
     // Filtered drones that are less than 10 minutes old
     const aliveDrones = drones.filter(i => {
       const aliveTime = time - i.time
-      console.log(aliveTime)
       return aliveTime < interval
     })
 
-    console.log(aliveDrones)
   
     return aliveDrones
   }
