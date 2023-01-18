@@ -103,7 +103,7 @@ const getdrones = async () => {
 //Get the data every 2 seconds from the APIs
 setInterval(getdrones, 2000)
 
-droneRouter.get('/', (request, response) => {
+droneRouter.get('/api/drones', (request, response) => {
     response.json(insideDrones)
 })
 
